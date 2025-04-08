@@ -1,0 +1,79 @@
+{
+  "id": "d36ee9a4-6315-481c-bf57-291bd6a89540",
+  "version": "2.0",
+  "name": "Ejercicio3_Navegacion",
+  "url": "https://www.selenium.dev",
+  "tests": [{
+    "id": "00caf622-423a-435e-8967-e962b06b0944",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "8f99188c-96f8-42ce-9627-64d3fb111e38",
+    "name": "NavegacionInterna",
+    "commands": [{
+      "id": "f4a0669b-037b-498c-b019-9f96afda3e02",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3d306b78-cc1c-46dd-a238-4a2ce59fb8e5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1449x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16650843-ad5e-453d-9160-3d5e6453354e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Downloads",
+      "targets": [
+        ["css=.nav-item:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Downloads')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "42ec2bd1-95f7-4644-b9e5-a308a415d1f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[text()='Downloads']",
+      "targets": [],
+      "value": "Downloads"
+    }, {
+      "id": "72b5e442-433e-46ad-b439-deaa85c3a861",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Projects",
+      "targets": [
+        ["linkText=Projects", "linkText"],
+        ["css=.nav-item:nth-child(4) > .nav-link", "css:finder"],
+        ["xpath=//div[@id='main_navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/projects')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Projects')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70080ed3-c473-47ad-8c24-058133d37188",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//span[text()='Projects']",
+      "targets": [],
+      "value": "Projects"
+    }]
+  }],
+  "suites": [{
+    "id": "ed946e82-cb4c-4b91-89fb-87a9a6e558ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["00caf622-423a-435e-8967-e962b06b0944"]
+  }],
+  "urls": ["https://www.selenium.dev/"],
+  "plugins": []
+}

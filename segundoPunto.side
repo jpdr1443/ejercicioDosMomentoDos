@@ -1,0 +1,144 @@
+{
+  "id": "4cd81690-591a-45db-9931-a1796bafb288",
+  "version": "2.0",
+  "name": "segundoPunto",
+  "url": "https://automationexercise.com/",
+  "tests": [{
+    "id": "6ab127b7-083d-4b33-b77c-dc5baae1179e",
+    "name": "segundoPunto",
+    "commands": [{
+      "id": "f8f28aac-8a4b-4f5e-b389-8bea8b2f41c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://automationexercise.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f9e21632-fc4b-4440-884f-36aadff1783d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "746x680",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c8a4eb25-4e89-4d75-b521-d95534fa5b05",
+      "comment": "",
+      "command": "click",
+      "target": "linkText= Products",
+      "targets": [
+        ["linkText= Products", "linkText"],
+        ["css=.navbar-nav > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//header[@id='header']/div/div/div/div[2]/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/products')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Products')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "88f7d3a9-c0f5-451a-ab28-1c40f4238096",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_product",
+      "targets": [
+        ["id=search_product", "id"],
+        ["name=search", "name"],
+        ["css=#search_product", "css:finder"],
+        ["xpath=//input[@id='search_product']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c981291-889d-4579-91fb-6e10f4e22d4e",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_product",
+      "targets": [
+        ["id=search_product", "id"],
+        ["name=search", "name"],
+        ["css=#search_product", "css:finder"],
+        ["xpath=//input[@id='search_product']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "blue top"
+    }, {
+      "id": "c8276082-f49b-4142-827d-ac2a5c09bb28",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit_search",
+      "targets": [
+        ["id=submit_search", "id"],
+        ["css=#submit_search", "css:finder"],
+        ["xpath=//button[@id='submit_search']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dd75e68-21b5-4e61-a93e-39f23932d109",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=submit_search",
+      "targets": [
+        ["id=submit_search", "id"],
+        ["css=#submit_search", "css:finder"],
+        ["xpath=//button[@id='submit_search']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "48321153-ebb4-4f2d-8fbe-eec91709236d",
+      "comment": "",
+      "command": "click",
+      "target": "id=submit_search",
+      "targets": [
+        ["id=submit_search", "id"],
+        ["css=#submit_search", "css:finder"],
+        ["xpath=//button[@id='submit_search']", "xpath:attributes"],
+        ["xpath=//section[@id='advertisement']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5bd33377-1b79-4d13-88bf-0f24e0974c3b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=View Product",
+      "targets": [
+        ["linkText=View Product", "linkText"],
+        ["css=.nav-justified a", "css:finder"],
+        ["xpath=//a[contains(text(),'View Product')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/product_details/1')]", "xpath:href"],
+        ["xpath=//div[2]/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'View Product')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99fb0ad5-ce05-4bca-bbc7-c0939cb3bf2a",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,100)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d7e1787-51af-4176-9701-0c06a49977d2",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1178.6666259765625)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "bdca4649-15e9-498d-86c3-0fa4b8245c0c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6ab127b7-083d-4b33-b77c-dc5baae1179e"]
+  }],
+  "urls": ["https://automationexercise.com/"],
+  "plugins": []
+}

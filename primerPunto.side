@@ -1,0 +1,118 @@
+{
+  "id": "e1f442a8-6705-4f2a-91aa-324e37f88d01",
+  "version": "2.0",
+  "name": "primerPunto",
+  "url": "https://www.w3schools.com",
+  "tests": [{
+    "id": "8c82e539-b917-49af-a720-bdf294d473a3",
+    "name": "primerTest",
+    "commands": [{
+      "id": "d827a215-72a7-43bc-b3a0-7b35ddf576eb",
+      "comment": "",
+      "command": "open",
+      "target": "/html/html_forms.asp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6168ec8f-4e3a-44d9-897d-57938ec966cf",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be9cdd81-3ea5-491a-a432-0c6f70103ee6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.intro",
+      "targets": [
+        ["css=.intro", "css:finder"],
+        ["xpath=//div[@id='main']/p", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/p", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8b61b72-26e3-41cc-9d45-9f3e8626b47b",
+      "comment": "",
+      "command": "click",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1c61cdc-baab-4239-94ea-482efc621b0d",
+      "comment": "",
+      "command": "type",
+      "target": "id=fname",
+      "targets": [
+        ["id=fname", "id"],
+        ["name=fname", "name"],
+        ["css=#fname", "css:finder"],
+        ["xpath=//input[@id='fname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": "Juan Pablo"
+    }, {
+      "id": "4446c3e7-80e7-42da-b199-31ecd5ed7894",
+      "comment": "",
+      "command": "type",
+      "target": "id=lname",
+      "targets": [
+        ["id=lname", "id"],
+        ["name=lname", "name"],
+        ["css=#lname", "css:finder"],
+        ["xpath=//input[@id='lname']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "Diaz Rodriguez"
+    }, {
+      "id": "0c6e3818-17b5-43df-9c51-cab5a67c31d0",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(10)",
+      "targets": [
+        ["css=input:nth-child(10)", "css:finder"],
+        ["xpath=//input[@value='Submit']", "xpath:attributes"],
+        ["xpath=//div[@id='main']/div[3]/div/form/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8254a1ec-cf24-40d8-96f2-65d0b1775db3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Submitted Form Data')]", "xpath:innerText"]
+      ],
+      "value": "HTML Forms"
+    }, {
+      "id": "0c61388c-f250-4a8e-b427-8a8c1c265b9d",
+      "comment": "",
+      "command": "//setWindowSize",
+      "target": "handle=${win1797}",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "774ba00b-85da-4443-b0c1-7277f653e7ab",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8c82e539-b917-49af-a720-bdf294d473a3"]
+  }],
+  "urls": ["https://www.w3schools.com/"],
+  "plugins": []
+}
